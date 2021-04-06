@@ -41,7 +41,9 @@ class dsc {
         let x, x2;
         console.log(`d = ${d}`);
         if (d < 0) {
-            console.log(`არ აქვს ამონახსნი`)
+            x = (-this.b / (2 * this.a));
+            x2 = (Math.sqrt(-d) / (2 * this.a));
+            console.log(`კომპლექსური = x = ${x}i, x2 = ${x2}i`)
         } else if (d > 0) {
             x = (-this.b + Math.sqrt(d)) / (2 * this.a);
             x2 = (-this.b - Math.sqrt(d)) / (2 * this.a);
